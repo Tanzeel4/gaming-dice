@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#gameContainer {
+    background-color: antiquewhite;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.playArea {
+    width: 60%;
+    height: 60%;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+}
+.player {
+    width: 50%;
+    display: flex;
+    font-size: 30px ;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+#userPlayer {
+    width: 50%;
+    background-color: blue;
+}
+#opponentPlayer {
+    width: 50%;
+    background-color: gold;
+}
+.currentRoundScore {
+    padding: 20px 50px;
+    background-color: rgb(1, 255, 196);
+    border-radius: 10px;
+    color: black;
+}
+#actionButtons {
+    position: absolute;
+    display: flex;
+    border-radius: 50px;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 50%;
+}
+.active {
+    background-color: rgb(175, 102, 7);
+}
+#diceImage {
+    width: 100px;
+    height: 100px;
+}
+img {
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    border-radius: 22px;
+}

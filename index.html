@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roll The Dice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="gameContainer">
+        <div class="playArea">
+            <div id="userPlayer" class="player">
+                <div class="playerName" >Tanzeel Khan</div>
+                <div id="userTotalScore" class="totalScore">0</div>
+                <div class="currentRoundScore" id="userCurrentScore">0</div>
+            </div>
+            <div id="opponentPlayer" class="player">
+                <div class="playerName">Umer</div>
+                <div id="opponentTotalScore" class="totalScore">0</div>
+                <div class="currentRoundScore" id="opponentCurrentScore">0</div>
+            </div>
+        </div>
+        <div id="actionButtons">
+            <div style="display: flex; flex-direction: column; margin: -15px;">
+                <button>New Game</button>&nbsp;
+                <button onclick="handleRollDice()">Roll Dice</button>
+            </div>&nbsp;&nbsp;&nbsp;
+            <div><img id="diceImage" src="./asset/1.jpg" alt="Dice Image"></div>
+            &nbsp;&nbsp;&nbsp;<button onclick="handleHold()">Hold</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
